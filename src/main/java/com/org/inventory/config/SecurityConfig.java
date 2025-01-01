@@ -4,6 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
@@ -16,13 +17,20 @@ public class SecurityConfig {
                 .authorizeRequests(authorizeRequests ->
                         authorizeRequests
                                 .requestMatchers("/", "/login").permitAll()
+                                .requestMatchers("/api/products/**").authenticated()
                                 .anyRequest().authenticated()
                 )
                 .oauth2Login(oauth2Login ->
-                        oauth2Login
-                                .loginPage("/login")
-                                .defaultSuccessUrl("/home", true)
-                );
+                oauth2Login
+                        .loginPage("/login")
+                        .defaultSuccessUrl("/home", true)
+                )
+                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                .and()
+                .oauth2ResourceServer().jwt()
+                .and()
+                .and()
+                .cors().and().csrf().disable();
         return http.build();
     }
 }
