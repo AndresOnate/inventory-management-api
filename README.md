@@ -132,6 +132,10 @@ Si encuentras algún problema, verifica lo siguiente:
 - Revisa la salida de la consola para cualquier mensaje de error durante el inicio y sigue las instrucciones proporcionadas.
 
 ### 8. Dependencias
+
+![image](https://github.com/user-attachments/assets/19198b23-9039-461e-b6ee-f69e2323a6c8)
+
 - Spring Boot: Web, Seguridad, OAuth2, JPA y Thymeleaf
 - Swagger/OpenAPI: Para documentación de las APIs
 - Lombok: Para reducir código repetitivo (getters, setters, etc.)
+
