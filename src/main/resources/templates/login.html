@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #f8f9fa;
+            background-color: #f4f7fc;
+            font-family: Arial, sans-serif;
         }
         .navbar {
-            background-color: #81c784; /* Light Green */
+            background-color: #5e72e4; /* Azul oscuro */
         }
         .navbar-brand {
             color: white !important;
@@ -19,22 +22,34 @@
         .card {
             border: none;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
         .card-header {
-            background-color: #81c784; /* Light Green */
+            background-color: #5e72e4; /* Azul oscuro */
             color: white;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
+            font-size: 1.5rem;
         }
         .btn-custom {
-            background-color: #81c784; /* Light Green */
+            background-color: #5e72e4; /* Azul oscuro */
             color: white;
             border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            width: 100%;
         }
         .btn-custom:hover {
-            background-color: #66bb6a; /* Darker Green */
+            background-color: #4a66cc; /* Azul más oscuro */
             color: white;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+        }
+        .footer a {
+            color: #5e72e4;
         }
     </style>
 </head>
@@ -47,16 +62,23 @@
         <div class="col-md-6">
             <div class="card">
                 <div class="card-header text-center">
-                    Login with OAuth2
+                    <strong>Login with Google</strong>
                 </div>
                 <div class="card-body text-center">
-                    <p class="card-text">Please login using one of the following options:</p>
+                    <p class="card-text mb-4">Please login using your Google account.</p>
+                    <!-- OAuth2 Google Login -->
                     <a class="btn btn-custom" href="/oauth2/authorization/google">Login with Google</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<!-- Footer with links -->
+<div class="footer">
+    <p>Need help? <a href="#">Contact support</a></p>
+</div>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
