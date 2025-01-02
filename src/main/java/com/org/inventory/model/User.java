@@ -1,6 +1,10 @@
 package com.org.inventory.model;
 import lombok.Data;
 
+
+/**
+ * Represents a user with a name and email.
+ */
 @Data
 public class User {
     private String name;
