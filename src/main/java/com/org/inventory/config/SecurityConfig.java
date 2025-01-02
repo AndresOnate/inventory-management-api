@@ -16,7 +16,7 @@ public class SecurityConfig {
         http
                 .authorizeRequests(authorizeRequests ->
                         authorizeRequests
-                                .requestMatchers("/", "/login").permitAll()
+                                .requestMatchers( "/login", "/", "**.js", "**.css").permitAll()
                                 .requestMatchers("/api/products/**").authenticated()
                                 .anyRequest().authenticated()
                 )
@@ -25,8 +25,6 @@ public class SecurityConfig {
                         .loginPage("/login")
                         .defaultSuccessUrl("/home", true)
                 )
-                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-                .and()
                 .oauth2ResourceServer().jwt()
                 .and()
                 .and()
