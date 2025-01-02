@@ -21,7 +21,7 @@ Sigue estos pasos para configurar y ejecutar el proyecto localmente:
 Primero, clona el repositorio en tu máquina local:
 
 ```bash
-git https://github.com/AndresOnate/inventory-management-api.git
+git clone https://github.com/AndresOnate/inventory-management-api.git
 ```
 
 ```
