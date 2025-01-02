@@ -61,6 +61,8 @@ mvn spring-boot:run
 
 ### 5. Acceder a la aplicación
 
+![image](https://github.com/user-attachments/assets/06f7cfdf-7852-4d7e-b170-27427c649dd3)
+
 ## Puntos finales de la API
 
 Después de ejecutar la aplicación, deberías poder acceder a los siguientes puntos finales:
@@ -68,6 +70,8 @@ Después de ejecutar la aplicación, deberías poder acceder a los siguientes pu
 ### 1. Página de Login (OAuth2)
 - **URL**: `http://localhost:8080/login`
 - **Descripción**: Página de login para autenticación a través de OAuth2 (Google).
+
+![image](https://github.com/user-attachments/assets/53812694-dd84-4630-be6a-aae5b73006cb)
 
 ### 2. Página de Inicio (Después de iniciar sesión correctamente)
 - **URL**: `http://localhost:8080/home`
@@ -112,6 +116,8 @@ Después de ejecutar la aplicación, deberías poder acceder a los siguientes pu
   - **Respuesta**: Sin contenido, solo indica que el producto ha sido eliminado.
 
 ### 4. Swagger UI
+
+![image](https://github.com/user-attachments/assets/44b6a5e3-be32-4091-8855-70f59916278d)
 
 - **URL**: `http://localhost:8080/swagger-ui/index.html`
 - **Descripción**: La interfaz de Swagger proporciona una forma visual para probar las APIs de la aplicación. Desde aquí, podrás ver todos los puntos finales disponibles, probar las solicitudes y ver las respuestas directamente en el navegador.
