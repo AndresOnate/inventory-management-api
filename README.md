@@ -44,7 +44,7 @@ spring:
           issuer-uri: accounts.google.com
           jwk-set-uri: https://www.googleapis.com/oauth2/v3/certs
 ```
-- Reemplaza TU_GOOGLE_CLIENT_ID y TU_GOOGLE_CLIENT_SECRET con tus credenciales desde la Consola de Desarrolladores de Google. 
+- Reemplaza TU_GOOGLE_CLIENT_ID y TU_GOOGLE_CLIENT_SECRET con los que se encuentran en el archivo secrets.txt adjunto en los entregables de la prueba. 
 
 ### 3. Instalar dependencias
 
