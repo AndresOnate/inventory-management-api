@@ -21,8 +21,7 @@ Sigue estos pasos para configurar y ejecutar el proyecto localmente:
 Primero, clona el repositorio en tu máquina local:
 
 ```bash
-git https://github.com/AndresOnate/
-inventory-management-api.git
+git https://github.com/AndresOnate/inventory-management-api.git
 ```
 
 ```
@@ -38,8 +37,8 @@ spring:
       client:
         registration:
           google:
-            client-id: TU_GOOGLE_CLIENT_ID
-            client-secret: TU_GOOGLE_CLIENT_SECRET
+            client-id: <TU_GOOGLE_CLIENT_ID>
+            client-secret: <TU_GOOGLE_CLIENT_SECRET>
       resourceserver:
         jwt:
           issuer-uri: accounts.google.com
